@@ -1,0 +1,70 @@
+body {
+	background-image: url('shopped-lips.jpg');
+	background-repeat: repeat;
+	background-position: center;
+	position: relative;
+	animation: bgscroll 5s infinite linear;
+}
+
+.food {
+	margin: 35% auto 0 auto;
+	text-align: center;
+	position: relative;
+	width: 65%;
+	height: 233px;
+}
+
+.frenchFires {
+
+}
+
+.frenchFires img {
+	animation: bounce2 1s infinite  alternate;
+	position: absolute;
+	bottom: 5px;
+	right: 1px;
+}
+
+.burger {
+
+}
+
+.burger img {
+	animation: bounce 1s infinite  alternate;
+	position: absolute;
+	bottom: 5px;
+	left: 1px;
+}
+
+.hands {
+	position: relative;
+	bottom: 50px;
+}
+
+.hands img {
+	animation: hands 1s infinite  alternate;
+	float: right;
+}
+
+.hands:after {
+	clear: both;
+}
+
+@keyframes bgscroll {
+	from {background-position:0 100%;}
+	to {background-position:0 0;}
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+	100% { transform: translateY(-20px); }
+}
+@keyframes bounce2 {
+  0% { transform: translateY(0); }
+	100% { transform: translateY(-30px); }
+}
+
+@keyframes hands {
+  0% { transform: translateX(0); }
+	100% { transform: translateX(50px); }
+}
